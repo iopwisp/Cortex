@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan Analysis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        label {
+            display: block;
+            background: #FFD800;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        label:hover {
+            background: #E6C200;
+        }
+        .scan-box {
+            height: 250px;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #FFD800;
+            border-radius: 10px;
+            color: #FFF;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            background: #FFD800;
+            border: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #E6C200;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Scan Analysis</h2>
+    <label for="file-upload"><i class="fa fa-upload"></i> Upload Scan</label>
+    <input type="file" id="file-upload">
+    <div class="scan-box">
+        <p>Scan image will appear here.</p>
+    </div>
+    <button>Run Analysis</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #333, #555);
+    color: #FFF;
+}
+
+.topnav {
+    display: flex;
+    background-color: #222;
+    padding: 15px;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.topnav a, .topnav label {
+    color: #FFD800;
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.topnav a:hover, .topnav label:hover {
+    color: black;
+    background: #FFD800;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    padding: 20px;
+    background: rgba(51, 51, 51, 0.8);
+    color: #FFD800;
+    border-radius: 10px;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+}
+
+.scan-box {
+    height: 400px;
+    background: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #FFD800;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.scan-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    background: #FFD800;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #E6C200;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #707070, #bd7923);
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-container button:hover {
+    background: #1a5ed8;
+}
+
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+.login-logo {
+    width: 150px; /* Настроить размер */
+    display: block;
+    margin: 0 auto 15px;
+}
